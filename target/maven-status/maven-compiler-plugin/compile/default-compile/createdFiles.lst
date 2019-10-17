@@ -1,0 +1,4 @@
+br\com\pos\utfpr\controller\DefaultController.class
+br\com\pos\utfpr\config\SpringSecurityConfig.class
+br\com\pos\utfpr\SpringBootWebApplication.class
+br\com\pos\utfpr\error\MyAccessDeniedHandler.class

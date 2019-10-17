@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+<meta charset="UTF-8"/>
+      <title>Sistemas de Notícias UTFPR</title>
+    <div th:replace="fragments/header :: header-css"/>
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"/>
+
+<div class="container">
+
+    <div class="row" style="margin-top:20px">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+          <h1>Cadastro de Notícias</h1>
+         <div class="form-group input-group">
+			  <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+			  <input name="consulta" id="txt_consulta" placeholder="Pesquisar" type="text" class="form-control"/>
+			 </div>
+            <form th:action="@{/login}" method="post">
+                <fieldset>
+                  
+                    <div class="form-group">
+                        <input type="text" name="titulo" id="titulo" class="form-control input-lg"
+                               placeholder="Título" required="true" autofocus="true"/>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="data"  class="form-control input-lg" placeholder="Data"/>
+                    </div>
+                    
+                    <div class="form-group">
+                      <textarea class="form-control rounded-0" id="noticia"  rows="10" placeholder="Notícias"></textarea>
+                    </div>
+                    
+                     <div class="form-group">
+                        <input type="file" name="imagem" id="imagem" class="form-control input-lg" alt="Imagem"/>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4">
+                            <input type="submit" class="btn btn-lg btn-primary btn-block" value="Cadastrar"/>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4">
+                         <input type="submit" class="btn btn-lg btn-primary btn-block" value="Editar"/>
+                        </div>
+                         <div class="col-xs-4 col-sm-4 col-md-4">
+                         <input type="submit" class="btn btn-lg btn-primary btn-block" value="Excluir"/>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div th:replace="fragments/footer :: footer"/>
+
+</body>
+</html>

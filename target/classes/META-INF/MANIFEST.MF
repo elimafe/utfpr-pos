@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: pos-utfpr
+Implementation-Version: 1.0
+Built-By: Resource
+Implementation-Vendor-Id: br.com.pos-utfpr
+Build-Jdk: 1.8.0_221
+Implementation-URL: http://www.utfpr.edu.br/campus/cornelioprocopio
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
